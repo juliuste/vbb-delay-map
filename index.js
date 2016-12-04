@@ -1,7 +1,10 @@
 'use strict'
 
 const yo = require('yo-yo')
+const vbb = require('vbb-client')
+const ms = require('ms')
 
+const loop = require('./loop')
 const lines = require('./lines.json')
 
 const width = 500
@@ -34,7 +37,17 @@ const colors = {
 	, U55:  '#672f17'
 }
 
-let selectedStation = null
+const delays = {} // by id
+
+
+
+const s = new WebSocket('ws://163.172.184.156:8080/')
+s.onmessage = (msg) => {
+	const {station, delay} = JSON.parse(msg.data)
+	delays[station] = delay
+}
+s.onerror = console.error
+
 
 
 const renderGrass = (x, y) => yo `
@@ -48,35 +61,26 @@ const renderSegment = (last, current, line) => yo `
 	/>
 `
 
-const renderHint = (s) => yo `
+const renderHint = (s, delay) => yo `
 	<text
 		x="${s.coords.x * 20}" y="${s.coords.y * 20 * 0.7 - 30}"
 		text-anchor="middle" transform="scale(1, 1.43)"
-	>Foo Bar</text>
+	>${ms(Math.abs(delay || 0))}</text>
 `
 
-const renderStation = (s) => {
-	const isSelected = selectedStation === s.id
-	const onClick = () => {
-		selectedStation = isSelected ? null : s.id
-		rerender()
-	}
-	return yo `
-		<g>
-			<image
-				style="cursor: pointer"
-				x="${s.coords.x * 20 - 16.5}" y="${s.coords.y * 20 * 0.7 - 36}"
-				xlink:href="/transportDetails/transportDetailsSubahn_big.png"
-				width="${33}" height="${60}" transform="scale(1, 1.43)"
-				onclick=${onClick}
-				opacity="${isSelected ? 1 : .5}"
-			/>
-			${isSelected ? renderHint(s) : null }
-		</g>
-	`
-}
+const renderStation = (s, delay) => yo `
+	<g>
+		<image
+			style="cursor: pointer"
+			x="${s.coords.x * 20 - 16.5}" y="${s.coords.y * 20 * 0.7 - 36}"
+			xlink:href="/transportDetails/transportDetailsSubahn_big.png"
+			width="${33}" height="${60}" transform="scale(1, 1.43)"
+		/>
+		${delay > 0 ? renderHint(s, delay) : null}
+	</g>
+`
 
-const render = (lines) => {
+const render = (lines, delays) => {
 	const tiles = []
 
 	for (let lineName in lines) {
@@ -94,7 +98,7 @@ const render = (lines) => {
 			if (point.type !== 'station') continue
 			if (isRendered[point.id]) continue
 			isRendered[point.id] = true
-			tiles.push(renderStation(point))
+			tiles.push(renderStation(point, delays[point.id]))
 		}
 	}
 
@@ -103,8 +107,9 @@ const render = (lines) => {
 	`
 }
 
-const el = render(lines)
+const el = render(lines, delays)
 const rerender = () => {
-	yo.update(el, render(lines))
+	yo.update(el, render(lines, delays))
 }
+loop(rerender)
 document.querySelector('#map').appendChild(el)
