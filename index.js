@@ -48,7 +48,28 @@ s.onmessage = (msg) => {
 }
 s.onerror = console.error
 
-
+const getRandomTile = () => {
+	var items = [
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/landscapeTiles/landscapeTiles_059.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/landscapeTiles/landscapeTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/landscapeTiles/landscapeTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/landscapeTiles/landscapeTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_043.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_051.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_059.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_067.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_001.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_004.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_014.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_020.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_034.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/buildingTiles/buildingTiles_099.png',
+		'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_072.png'
+	];
+	return items[Math.floor(Math.random()*items.length)];
+}
 
 const renderGrass = (x, y) => yo `
 	<path d="M ${x*20-10} ${y*20} L ${x*20} ${y*20-10} L ${x*20+10} ${y*20} L ${x*20} ${y*20+10} z" fill="#27ae60" />
