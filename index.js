@@ -48,19 +48,31 @@ const renderSegment = (last, current, line) => yo `
 	/>
 `
 
+const renderHint = (s) => yo `
+	<text
+		x="${s.coords.x * 20}" y="${s.coords.y * 20 * 0.7 - 30}"
+		text-anchor="middle" transform="scale(1, 1.43)"
+	>Foo Bar</text>
+`
+
 const renderStation = (s) => {
+	const isSelected = selectedStation === s.id
 	const onClick = () => {
-		selectedStation = s.id
+		selectedStation = isSelected ? null : s.id
 		rerender()
 	}
 	return yo `
-		<image
-			style="cursor: pointer"
-			x="${s.coords.x * 20 - 7.5}" y="${(s.coords.y * 20 - (selectedStation === s.id ? 32 : 28))*0.7}"
-			xlink:href="/transportDetails/transportDetailsSubahn_small.png"
-			width="${31}" height="${29}" transform="scale(1, 1.43)"
-			onclick=${onClick}
-		/>
+		<g>
+			<image
+				style="cursor: pointer"
+				x="${s.coords.x * 20 - 16.5}" y="${s.coords.y * 20 * 0.7 - 36}"
+				xlink:href="/transportDetails/transportDetailsSubahn_big.png"
+				width="${33}" height="${60}" transform="scale(1, 1.43)"
+				onclick=${onClick}
+				opacity="${isSelected ? 1 : .5}"
+			/>
+			${isSelected ? renderHint(s) : null }
+		</g>
 	`
 }
 
@@ -75,16 +87,19 @@ const render = (lines) => {
 		}
 	}
 
+	const isRendered = {} // by id
 	for (let lineName in lines) {
 		let lastPoint = null
 		for (let point of lines[lineName]) {
 			if (point.type !== 'station') continue
+			if (isRendered[point.id]) continue
+			isRendered[point.id] = true
 			tiles.push(renderStation(point))
 		}
 	}
 
 	return yo `
-		<g transform="scale(1, .7)">${tiles}</g>
+		<g transform="scale(1, .6)">${tiles}</g>
 	`
 }
 
