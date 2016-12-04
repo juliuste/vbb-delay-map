@@ -41,12 +41,12 @@ const delays = {} // by id
 
 
 
-const s = new WebSocket('ws://163.172.184.156:8080/')
-s.onmessage = (msg) => {
-	const {station, delay} = JSON.parse(msg.data)
-	delays[station] = delay
-}
-s.onerror = console.error
+// const s = new WebSocket('ws://163.172.184.156:8080/')
+// s.onmessage = (msg) => {
+// 	const {station, delay} = JSON.parse(msg.data)
+// 	delays[station] = delay
+// }
+// s.onerror = console.error
 
 const getRandomTile = () => {
 	var items = [
@@ -71,8 +71,20 @@ const getRandomTile = () => {
 	return items[Math.floor(Math.random()*items.length)];
 }
 
-const renderGrass = (x, y) => yo `
-	<path d="M ${x*20-10} ${y*20} L ${x*20} ${y*20-10} L ${x*20+10} ${y*20} L ${x*20} ${y*20+10} z" fill="#27ae60" />
+const renderFlat = (x, y) => yo `
+	<image
+		x="${x * 20 - 16.5}" y="${y * 20 * 0.55 - 25}"
+		xlink:href="https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_072.png"
+		width="${20}" height="${60}" transform="scale(1, 1.82)"
+	/>
+`
+
+const renderBackground = (x, y) => yo `
+	<image
+		x="${x * 20 - 16.5}" y="${y * 20 * 0.55 - 25}"
+		xlink:href="${getRandomTile()}"
+		width="${20}" height="${60}" transform="scale(1, 1.82)"
+	/>
 `
 
 const renderSegment = (last, current, line) => yo `
@@ -84,25 +96,37 @@ const renderSegment = (last, current, line) => yo `
 
 const renderHint = (s, delay) => yo `
 	<text
-		x="${s.coords.x * 20}" y="${s.coords.y * 20 * 0.7 - 30}"
-		text-anchor="middle" transform="scale(1, 1.43)"
+		x="${s.coords.x * 20 + 15}" y="${s.coords.y * 20 * 0.55 - 15}"
+		text-anchor="middle" transform="scale(1, 1.82)"
+		font-size="10"
 	>${ms(Math.abs(delay || 0))}</text>
 `
 
 const renderStation = (s, delay) => yo `
 	<g>
 		<image
-			style="cursor: pointer"
-			x="${s.coords.x * 20 - 16.5}" y="${s.coords.y * 20 * 0.7 - 36}"
+			x="${s.coords.x * 20 - 10}" y="${s.coords.y * 20 * 0.55 - 35}"
 			xlink:href="/transportDetails/transportDetailsSubahn_big.png"
-			width="${33}" height="${60}" transform="scale(1, 1.43)"
+			width="${20}" height="${60}" transform="scale(1, 1.82)"
 		/>
 		${delay > 0 ? renderHint(s, delay) : null}
 	</g>
 `
 
+const bg = []
+
+for (let y = 0; y < 200; y += .5) {
+	for (let x = 0; x < 100; x++) {
+		const offset = y % 1 === 0 ? -.5 : 0
+		if (Math.random() > .7) bg.push(renderBackground(x + offset, y))
+		else bg.push(renderFlat(x + offset, y))
+	}
+}
+
 const render = (lines, delays) => {
-	const tiles = []
+	const tiles = [
+		yo `<g class="bg">${bg}</g>`
+	]
 
 	for (let lineName in lines) {
 		let lastPoint = null
@@ -124,7 +148,7 @@ const render = (lines, delays) => {
 	}
 
 	return yo `
-		<g transform="scale(1, .6)">${tiles}</g>
+		<g transform="scale(1, 0.55)">${tiles}</g>
 	`
 }
 
@@ -132,5 +156,5 @@ const el = render(lines, delays)
 const rerender = () => {
 	yo.update(el, render(lines, delays))
 }
-loop(rerender)
+// loop(rerender)
 document.querySelector('#map').appendChild(el)
