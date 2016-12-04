@@ -22,30 +22,30 @@ function getTransportationTile(chr, item) {
 
 	switch (chr) {
 	case '-':
-		return '../transportTiles/transportTilesRL' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesRL' + item + 'bahn.png';
 	case '|':
-		return '../transportTiles/transportTilesTB' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesTB' + item + 'bahn.png';
 	case '/':
-		return '../transportTiles/transportTilesNS' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesNS' + item + 'bahn.png';
 	case ';':
-		return '../transportTiles/transportTilesEW' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesEW' + item + 'bahn.png';
 	case '.':
-		return '../transportTiles/transportTilesRS' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesRS' + item + 'bahn.png';
 	case ',':
-		return '../transportTiles/transportTilesEL' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesEL' + item + 'bahn.png';
 	case '`':
-		return '../transportTiles/transportTilesBW' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesBW' + item + 'bahn.png';
 	case 'l':
-		return '../transportTiles/transportTilesTE' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesTE' + item + 'bahn.png';
 	case 'v':
-		return '../transportTiles/transportTilesRW' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesRW' + item + 'bahn.png';
 	case '+':
-		return '../transportTiles/transportTilesTRBL' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesTRBL' + item + 'bahn.png';
 	case 'x':
-		return '../transportTiles/transportTilesNESW' + item + 'bahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesNESW' + item + 'bahn.png';
 	}
 
-	return '../cityTiles/cityTiles_072.png';
+	return 'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_072.png';
 }
 
 function getTransportationTileBoth(chrS, chrU) {
@@ -54,9 +54,9 @@ function getTransportationTileBoth(chrS, chrU) {
 	var chr = chrS + chrU;
 	switch (chr) {
 	case '|-':
-		return '../transportTiles/transportTilesTRBLsubahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesTRBLsubahn.png';
 	case '-|':
-		return '../transportTiles/transportTilesTRBLusbahn.png';
+		return 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportTiles/transportTilesTRBLusbahn.png';
 	}
 
 	return getTransportationTile(chrS, 's');
@@ -83,7 +83,7 @@ function composeMap(lines, netSBahn, netUBahn) {
 	for (y = 0; y < maxY; ++y) {
 		html += '<p>';
 		for (x = 0; x < maxX; ++x) {
-			img = '../cityTiles/cityTiles_072.png';
+			img = 'https://cdn.rawgit.com/tursics/isometric-icons/master/cityTiles/cityTiles_072.png';
 
 			if ((typeof netSBahn[y] !== 'undefined') && (typeof netSBahn[y][x] !== 'undefined') && (netSBahn[y][x] !== ' ') && (typeof netUBahn[y] !== 'undefined') && (typeof netUBahn[y][x] !== 'undefined') && (netUBahn[y][x] !== ' ')) {
 				img = getTransportationTileBoth(netSBahn[y][x], netUBahn[y][x]);
@@ -116,11 +116,11 @@ function composeMap(lines, netSBahn, netUBahn) {
 		}
 		for (x = 0; x < maxX; ++x) {
 			if ((stationsU[x] > 0) && (stationsS[x] > 0)) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + '../transportDetails/transportDetailsSubahn.png">';
+				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSubahn.png">';
 			} else if (stationsU[x] > 0) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + '../transportDetails/transportDetailsUbahn.png">';
+				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsUbahn.png">';
 			} else if (stationsS[x] > 0) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + '../transportDetails/transportDetailsSbahn.png">';
+				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSbahn.png">';
 			}
 		}
 		html += '</p>';
