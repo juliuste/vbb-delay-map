@@ -1,5 +1,14 @@
+$('#error').hide()
+
 function error(message){
-	$('#error').html(message)
+  if(!message){
+    $('#error').html('')
+    $('#error').hide()  
+  }
+  else{
+    $('#error').html(message)
+    $('#error').show()  
+  }
 }
 
 function firstN(list, n){
