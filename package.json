@@ -1,0 +1,22 @@
+{
+	"name": "vbb-toy-map",
+	"description": "",
+	"version": "0.1.0",
+	"keywords": [
+	],
+	"authors": ["Thomas Tursics <thomas@tursics.de>", "Jannis R <mail@jannisr.de>", "Julius Tens <mail@julius-tens.de>"],
+	"homepage": "https://github.com/juliuste/vbb-toy-map",
+	"repository": "juliuste/vbb-toy-map",
+	"bugs": "https://github.com/juliuste/vbb-toy-map/issues",
+	"main": "./index.js",
+	"files": ["index.js"],
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"scripts": {},
+	"engine" : {
+		"node" : ">=4"
+	},
+	"license": "MIT"
+}
