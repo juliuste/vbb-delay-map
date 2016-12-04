@@ -41,12 +41,12 @@ const delays = {} // by id
 
 
 
-// const s = new WebSocket('ws://163.172.184.156:8080/')
-// s.onmessage = (msg) => {
-// 	const {station, delay} = JSON.parse(msg.data)
-// 	delays[station] = delay
-// }
-// s.onerror = console.error
+const s = new WebSocket('ws://163.172.184.156:8080/')
+s.onmessage = (msg) => {
+	const {station, delay} = JSON.parse(msg.data)
+	delays[station] = delay
+}
+s.onerror = console.error
 
 const getRandomTile = () => {
 	var items = [
@@ -90,15 +90,21 @@ const renderBackground = (x, y) => yo `
 const renderSegment = (last, current, line) => yo `
 	<path
 		d="M${last.coords.x*20} ${last.coords.y*20} L ${current.coords.x*20} ${current.coords.y*20}"
-		stroke="${colors[line.toUpperCase()] || '#555'}" stroke-width="4" stroke-linecap="round"
+		stroke="${colors[line.toUpperCase()] || '#555'}" stroke-width="5" stroke-linecap="round"
 	/>
 `
 
+const delayColor = (delay) => {
+	if (delay > 1000*60*10) return '#D92730'
+	if (delay > 1000*60*5) return '#E0BB24'
+	return '#0EB50E'
+}
+
 const renderHint = (s, delay) => yo `
 	<text
-		x="${s.coords.x * 20 + 15}" y="${s.coords.y * 20 * 0.55 - 15}"
-		text-anchor="middle" transform="scale(1, 1.82)"
-		font-size="10"
+		x="${s.coords.x * 20 + 5}" y="${s.coords.y * 20 * 0.55 - 15}"
+		text-anchor="left" transform="scale(1, 1.82)"
+		font-size="20" fill="${delayColor(delay || 0)}"
 	>${ms(Math.abs(delay || 0))}</text>
 `
 
@@ -115,13 +121,13 @@ const renderStation = (s, delay) => yo `
 
 const bg = []
 
-for (let y = 0; y < 200; y += .5) {
-	for (let x = 0; x < 100; x++) {
-		const offset = y % 1 === 0 ? -.5 : 0
-		if (Math.random() > .7) bg.push(renderBackground(x + offset, y))
-		else bg.push(renderFlat(x + offset, y))
-	}
-}
+// for (let y = 0; y < 200; y += .5) {
+// 	for (let x = 0; x < 100; x++) {
+// 		const offset = y % 1 === 0 ? -.5 : 0
+// 		if (Math.random() > .6) bg.push(renderBackground(x + offset, y))
+// 		else bg.push(renderFlat(x + offset, y))
+// 	}
+// }
 
 const render = (lines, delays) => {
 	const tiles = [
@@ -156,5 +162,5 @@ const el = render(lines, delays)
 const rerender = () => {
 	yo.update(el, render(lines, delays))
 }
-// loop(rerender)
+loop(rerender)
 document.querySelector('#map').appendChild(el)
