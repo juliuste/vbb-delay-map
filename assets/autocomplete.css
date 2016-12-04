@@ -5,17 +5,17 @@
     color: #fff;
     overflow: auto;
     cursor: default;
-    font-size: 150%;
+    font-size: 100%;
     border: 1px solid #fff;
     margin-top: -1px;
 }
 .autocomplete-suggestion {
-    padding: 5px 3px;
+    padding: 3.4px 2px;
     white-space: nowrap;
     overflow: hidden;
 }
 .autocomplete-no-suggestion {
-    padding: 5px 3px;
+    padding: 3.4px 2px;
 }
 .autocomplete-selected {
     background: rgba(0,0,0,0.4);
@@ -24,7 +24,7 @@
     font-weight: normal;
 }
 .autocomplete-group {
-    padding: 3px 3px;
+    padding: 2px 2px;
 }
 .autocomplete-group strong {
     font-weight: bold;
