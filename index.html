@@ -16,7 +16,7 @@ body{
 	justify-content: center;
 	font-size: 100%;
 	font-family: Helvetica;
-	background: #ddd;
+	background: #d8d3bf;
 }
 
 form{
@@ -76,11 +76,12 @@ form{
 	max-width: 90vw;
 	max-height: 90vh;
 	outline: 1px solid red;
+	overflow: scroll;
 }
 	</style>
 </head>
 <body>
-	<svg id="map" preserveAspectRatio="xMidYMid meet"></svg>
+	<svg id="map" viewBox="0 0 2200 1000" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
 	<!-- <form id="routing" action="#">
 		<p id="error"></p>
 		<input type="text" class="station" id="from-station" placeholder="Startbahnhof">

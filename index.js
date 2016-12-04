@@ -4,45 +4,73 @@ const yo = require('yo-yo')
 
 const lines = require('./lines.json')
 
-const width = 1000
-const height = 1000
+const width = 500
+const height = 500
 
+const colors = {
+	  S1:   '#de4da4'
+	, S2:   '#005f27'
+	, S3:   '#0a4c99'
+	, S5:   '#ff5900'
+	, S7:   '#6f4e9c'
+	, S8:   '#55a822'
+	, S9:   '#8a0e30'
+	, S25:  '#005f27'
+	, RING: '#a23b1e'
+	, S45:  '#c38737'
+	, S46:  '#c38737'
+	, S47:  '#c38737'
+	, S75:  '#6f4e9c'
+	, S85:  '#55a822'
+	, U1:   '#55a822'
+	, U2:   '#ff3300'
+	, U3:   '#019377'
+	, U4:   '#ffd900'
+	, U5:   '#672f17'
+	, U6:   '#6f4e9c'
+	, U7:   '#3690c0'
+	, U8:   '#0a3c85'
+	, U9:   '#ff7300'
+	, U55:  '#672f17'
+}
+
+let selectedStation = null
 
 
 const renderGrass = (x, y) => yo `
 	<path d="M ${x*20-10} ${y*20} L ${x*20} ${y*20-10} L ${x*20+10} ${y*20} L ${x*20} ${y*20+10} z" fill="#27ae60" />
 `
 
-const renderSegment = (last, current) => yo `
+const renderSegment = (last, current, line) => yo `
 	<path
 		d="M${last.coords.x*20} ${last.coords.y*20} L ${current.coords.x*20} ${current.coords.y*20}"
-		stroke="#333" stroke-width="5" stroke-linecap="round"
+		stroke="${colors[line.toUpperCase()] || '#555'}" stroke-width="4" stroke-linecap="round"
 	/>
 `
 
-	// <circle cx="${s.coords.x * 20}" cy="${s.coords.y * 20}" r="${6}" fill="#e74c3c" />
-const renderStation = (s) => yo `
-	<image
-		x="${s.coords.x * 20}" y="${s.coords.y * 20}"
-		xlink:href="/isometric-icons/transportDetails/transportDetailsSubahn.png"
-	/>
-`
+const renderStation = (s) => {
+	const onClick = () => {
+		selectedStation = s.id
+		rerender()
+	}
+	return yo `
+		<image
+			style="cursor: pointer"
+			x="${s.coords.x * 20 - 7.5}" y="${(s.coords.y * 20 - (selectedStation === s.id ? 32 : 28))*0.7}"
+			xlink:href="/transportDetails/transportDetailsSubahn_small.png"
+			width="${31}" height="${29}" transform="scale(1, 1.43)"
+			onclick=${onClick}
+		/>
+	`
+}
 
 const render = (lines) => {
 	const tiles = []
 
-	// grass
-	for (let y = 0; y < height; y += 1) {
-		for (let x = 0; x < width; x += 1) {
-			const offset = y % 2 === 1 ? .5 : 0
-			if (Math.random() < .3) tiles.push(renderGrass(x - offset, y - offset))
-		}
-	}
-
 	for (let lineName in lines) {
 		let lastPoint = null
 		for (let point of lines[lineName]) {
-			if (lastPoint) tiles.push(renderSegment(lastPoint, point))
+			if (lastPoint) tiles.push(renderSegment(lastPoint, point, lineName))
 			lastPoint = point
 		}
 	}
@@ -50,12 +78,10 @@ const render = (lines) => {
 	for (let lineName in lines) {
 		let lastPoint = null
 		for (let point of lines[lineName]) {
-			if (point) tiles.push(renderStation(point))
+			if (point.type !== 'station') continue
+			tiles.push(renderStation(point))
 		}
 	}
-
-	tiles.push(renderStation({coords: {x: 0, y: 0}}))
-	tiles.push(renderStation({coords: {x: 1, y: 1}}))
 
 	return yo `
 		<g transform="scale(1, .7)">${tiles}</g>
@@ -63,4 +89,7 @@ const render = (lines) => {
 }
 
 const el = render(lines)
+const rerender = () => {
+	yo.update(el, render(lines))
+}
 document.querySelector('#map').appendChild(el)
