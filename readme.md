@@ -6,4 +6,4 @@
 
 ## Contributing
 
-If you found a bug, want to propose a feature or feel the urge to complain about your life, feel free to visit [the issues page](https://github.com/juliuste/vbb-toy-map/issues).
+If you found a bug or want to propose a feature, feel free to visit [the issues page](https://github.com/juliuste/vbb-toy-map/issues).
