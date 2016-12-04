@@ -68,7 +68,7 @@
       },
       "type": "station",
       "name": "Schöneberg",
-      "id": 9054101
+      "id": 9054104
     },
     {
       "coords": {
@@ -95,7 +95,7 @@
       },
       "type": "station",
       "name": "Hermannstraße",
-      "id": 9079221
+      "id": 9131527
     },
     {
       "coords": {
@@ -156,7 +156,7 @@
       },
       "type": "station",
       "name": "Storkower Straße",
-      "id": 9110012
+      "id": 9160014
     },
     {
       "coords": {
@@ -181,7 +181,7 @@
       },
       "type": "station",
       "name": "Greifswalder Straße",
-      "id": 9110003
+      "id": 9110020
     },
     {
       "coords": {
@@ -242,7 +242,7 @@
       },
       "type": "station",
       "name": "Beusselstraße",
-      "id": 9020202
+      "id": 9002102
     },
     {
       "coords": {
@@ -274,7 +274,7 @@
       },
       "type": "station",
       "name": "Westend",
-      "id": 9026101
+      "id": 9026207
     },
     {
       "coords": {
@@ -357,7 +357,7 @@
       },
       "type": "station",
       "name": "Hermsdorf",
-      "id": 9093201
+      "id": 9092257
     },
     {
       "coords": {
@@ -375,7 +375,7 @@
       },
       "type": "station",
       "name": "Wittenau",
-      "id": 9096101
+      "id": 9096407
     },
     {
       "coords": {
@@ -401,7 +401,8 @@
         "y": 17
       },
       "type": "station",
-      "name": "Wollankstraße"
+      "name": "Wollankstraße",
+      "id": 9130003
     },
     {
       "coords": {
@@ -453,7 +454,7 @@
       },
       "type": "station",
       "name": "Oranienburger Straße",
-      "id": 9100007
+      "id": 9096202
     },
     {
       "coords": {
@@ -469,7 +470,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -512,7 +513,7 @@
       },
       "type": "station",
       "name": "Yorckstraße",
-      "id": 9600003
+      "id": 9017105
     },
     {
       "coords": {
@@ -530,7 +531,7 @@
       },
       "type": "station",
       "name": "Schöneberg",
-      "id": 9054101
+      "id": 9054104
     },
     {
       "coords": {
@@ -557,7 +558,7 @@
       },
       "type": "station",
       "name": "Rathaus Steglitz",
-      "id": 9062202
+      "id": 9062782
     },
     {
       "coords": {
@@ -566,7 +567,7 @@
       },
       "type": "station",
       "name": "Botanischer Garten",
-      "id": 9066102
+      "id": 9051307
     },
     {
       "coords": {
@@ -575,7 +576,7 @@
       },
       "type": "station",
       "name": "Lichterfelde West",
-      "id": 9066101
+      "id": 9066171
     },
     {
       "coords": {
@@ -640,7 +641,7 @@
       },
       "type": "station",
       "name": "Bernau",
-      "id": 9007110
+      "id": 9350160
     },
     {
       "coords": {
@@ -685,7 +686,7 @@
       },
       "type": "station",
       "name": "Karow",
-      "id": 9143001
+      "id": 9143509
     },
     {
       "coords": {
@@ -764,7 +765,7 @@
       },
       "type": "station",
       "name": "Oranienburger Straße",
-      "id": 9100007
+      "id": 9096202
     },
     {
       "coords": {
@@ -780,7 +781,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -823,7 +824,7 @@
       },
       "type": "station",
       "name": "Yorckstraße",
-      "id": 9600003
+      "id": 9017105
     },
     {
       "coords": {
@@ -857,7 +858,7 @@
       },
       "type": "station",
       "name": "Attilastraße",
-      "id": 9068301
+      "id": 9068304
     },
     {
       "coords": {
@@ -911,7 +912,7 @@
       },
       "type": "station",
       "name": "Blankenfelde",
-      "id": 9245027
+      "id": 9133503
     }
   ],
   "s25": [
@@ -949,7 +950,7 @@
       },
       "type": "station",
       "name": "Tegel",
-      "id": 9089301
+      "id": 9089451
     },
     {
       "coords": {
@@ -1000,7 +1001,8 @@
         "y": 17
       },
       "type": "station",
-      "name": "Wollankstraße"
+      "name": "Wollankstraße",
+      "id": 9130003
     },
     {
       "coords": {
@@ -1052,7 +1054,7 @@
       },
       "type": "station",
       "name": "Oranienburger Straße",
-      "id": 9100007
+      "id": 9096202
     },
     {
       "coords": {
@@ -1068,7 +1070,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -1111,7 +1113,7 @@
       },
       "type": "station",
       "name": "Yorckstraße",
-      "id": 9600003
+      "id": 9017105
     },
     {
       "coords": {
@@ -1172,7 +1174,7 @@
       },
       "type": "station",
       "name": "Lichterfelde Süd",
-      "id": 9064201
+      "id": 9064278
     },
     {
       "coords": {
@@ -1215,7 +1217,7 @@
       },
       "type": "station",
       "name": "Rummelsburg",
-      "id": 9160002
+      "id": 9160001
     },
     {
       "coords": {
@@ -1248,7 +1250,8 @@
         "y": 46
       },
       "type": "station",
-      "name": "Wuhlheide"
+      "name": "Wuhlheide",
+      "id": 9180002
     },
     {
       "coords": {
@@ -1266,7 +1269,7 @@
       },
       "type": "station",
       "name": "Hirschgarten",
-      "id": 9182001
+      "id": 9182003
     },
     {
       "coords": {
@@ -1331,7 +1334,7 @@
       },
       "type": "station",
       "name": "Hermannstraße",
-      "id": 9079221
+      "id": 9131527
     },
     {
       "coords": {
@@ -1367,7 +1370,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -1394,7 +1397,7 @@
       },
       "type": "station",
       "name": "Altglienicke",
-      "id": 9195510
+      "id": 9195006
     },
     {
       "coords": {
@@ -1423,7 +1426,7 @@
       },
       "type": "station",
       "name": "Westend",
-      "id": 9026101
+      "id": 9026207
     },
     {
       "coords": {
@@ -1493,7 +1496,7 @@
       },
       "type": "station",
       "name": "Schöneberg",
-      "id": 9054101
+      "id": 9054104
     },
     {
       "coords": {
@@ -1520,7 +1523,7 @@
       },
       "type": "station",
       "name": "Hermannstraße",
-      "id": 9079221
+      "id": 9131527
     },
     {
       "coords": {
@@ -1556,7 +1559,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -1630,7 +1633,7 @@
       },
       "type": "station",
       "name": "Hermannstraße",
-      "id": 9079221
+      "id": 9131527
     },
     {
       "coords": {
@@ -1666,7 +1669,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -1675,7 +1678,7 @@
       },
       "type": "station",
       "name": "Oberspree",
-      "id": 9192002
+      "id": 9180547
     },
     {
       "coords": {
@@ -1722,7 +1725,7 @@
       },
       "type": "station",
       "name": "Olympiastadion",
-      "id": 9025321
+      "id": 9025301
     },
     {
       "coords": {
@@ -1730,7 +1733,8 @@
         "y": 37
       },
       "type": "station",
-      "name": "Heerstraße"
+      "name": "Heerstraße",
+      "id": 9032106
     },
     {
       "coords": {
@@ -1773,7 +1777,7 @@
       },
       "type": "station",
       "name": "Savignyplatz",
-      "id": 9024203
+      "id": 9024204
     },
     {
       "coords": {
@@ -1791,7 +1795,7 @@
       },
       "type": "station",
       "name": "Tiergarten",
-      "id": 9003103
+      "id": 9003155
     },
     {
       "coords": {
@@ -1800,7 +1804,7 @@
       },
       "type": "station",
       "name": "Bellevue",
-      "id": 9003102
+      "id": 9003252
     },
     {
       "coords": {
@@ -1825,7 +1829,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -1850,7 +1854,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -1877,7 +1881,7 @@
       },
       "type": "station",
       "name": "Warschauer Straße",
-      "id": 9120004
+      "id": 9120014
     },
     {
       "coords": {
@@ -1911,7 +1915,7 @@
       },
       "type": "station",
       "name": "Lichtenberg",
-      "id": 9160004
+      "id": 9160522
     },
     {
       "coords": {
@@ -1936,7 +1940,7 @@
       },
       "type": "station",
       "name": "Biesdorf",
-      "id": 9171005
+      "id": 9171001
     },
     {
       "coords": {
@@ -1954,7 +1958,7 @@
       },
       "type": "station",
       "name": "Kaulsdorf",
-      "id": 9175004
+      "id": 9175002
     },
     {
       "coords": {
@@ -1990,7 +1994,7 @@
       },
       "type": "station",
       "name": "Neuenhagen",
-      "id": 9320013
+      "id": 9320007
     },
     {
       "coords": {
@@ -2025,7 +2029,8 @@
         "y": 29
       },
       "type": "station",
-      "name": "Hegermühle"
+      "name": "Hegermühle",
+      "id": 9320003
     },
     {
       "coords": {
@@ -2062,7 +2067,8 @@
         "y": 74
       },
       "type": "station",
-      "name": "Babelsberg"
+      "name": "Babelsberg",
+      "id": 9230181
     },
     {
       "coords": {
@@ -2112,7 +2118,7 @@
       },
       "type": "station",
       "name": "Grunewald",
-      "id": 9048101
+      "id": 9054192
     },
     {
       "coords": {
@@ -2146,7 +2152,7 @@
       },
       "type": "station",
       "name": "Savignyplatz",
-      "id": 9024203
+      "id": 9024204
     },
     {
       "coords": {
@@ -2164,7 +2170,7 @@
       },
       "type": "station",
       "name": "Tiergarten",
-      "id": 9003103
+      "id": 9003155
     },
     {
       "coords": {
@@ -2173,7 +2179,7 @@
       },
       "type": "station",
       "name": "Bellevue",
-      "id": 9003102
+      "id": 9003252
     },
     {
       "coords": {
@@ -2198,7 +2204,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -2223,7 +2229,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -2250,7 +2256,7 @@
       },
       "type": "station",
       "name": "Warschauer Straße",
-      "id": 9120004
+      "id": 9120014
     },
     {
       "coords": {
@@ -2284,7 +2290,7 @@
       },
       "type": "station",
       "name": "Lichtenberg",
-      "id": 9160004
+      "id": 9160522
     },
     {
       "coords": {
@@ -2331,7 +2337,8 @@
         "y": 28
       },
       "type": "station",
-      "name": "Poelchaustraße"
+      "name": "Poelchaustraße",
+      "id": 9170019
     },
     {
       "coords": {
@@ -2339,7 +2346,8 @@
         "y": 26
       },
       "type": "station",
-      "name": "Marzahn"
+      "name": "Marzahn",
+      "id": 9170010
     },
     {
       "coords": {
@@ -2366,7 +2374,7 @@
       },
       "type": "station",
       "name": "Ahrensfelde",
-      "id": 9170004
+      "id": 9170006
     }
   ],
   "s75": [
@@ -2395,7 +2403,7 @@
       },
       "type": "station",
       "name": "Savignyplatz",
-      "id": 9024203
+      "id": 9024204
     },
     {
       "coords": {
@@ -2413,7 +2421,7 @@
       },
       "type": "station",
       "name": "Tiergarten",
-      "id": 9003103
+      "id": 9003155
     },
     {
       "coords": {
@@ -2422,7 +2430,7 @@
       },
       "type": "station",
       "name": "Bellevue",
-      "id": 9003102
+      "id": 9003252
     },
     {
       "coords": {
@@ -2447,7 +2455,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -2472,7 +2480,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -2499,7 +2507,7 @@
       },
       "type": "station",
       "name": "Warschauer Straße",
-      "id": 9120004
+      "id": 9120014
     },
     {
       "coords": {
@@ -2533,7 +2541,7 @@
       },
       "type": "station",
       "name": "Lichtenberg",
-      "id": 9160004
+      "id": 9160522
     },
     {
       "coords": {
@@ -2581,7 +2589,7 @@
       },
       "type": "station",
       "name": "Gehrenseestraße",
-      "id": 9152002
+      "id": 9150504
     },
     {
       "coords": {
@@ -2744,7 +2752,7 @@
       },
       "type": "station",
       "name": "Greifswalder Straße",
-      "id": 9110003
+      "id": 9110020
     },
     {
       "coords": {
@@ -2769,7 +2777,7 @@
       },
       "type": "station",
       "name": "Storkower Straße",
-      "id": 9110012
+      "id": 9160014
     },
     {
       "coords": {
@@ -2823,7 +2831,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -2888,7 +2896,7 @@
       },
       "type": "station",
       "name": "Wittenau",
-      "id": 9096101
+      "id": 9096407
     },
     {
       "coords": {
@@ -2914,7 +2922,8 @@
         "y": 17
       },
       "type": "station",
-      "name": "Wollankstraße"
+      "name": "Wollankstraße",
+      "id": 9130003
     },
     {
       "coords": {
@@ -2971,7 +2980,7 @@
       },
       "type": "station",
       "name": "Greifswalder Straße",
-      "id": 9110003
+      "id": 9110020
     },
     {
       "coords": {
@@ -2996,7 +3005,7 @@
       },
       "type": "station",
       "name": "Storkower Straße",
-      "id": 9110012
+      "id": 9160014
     },
     {
       "coords": {
@@ -3050,7 +3059,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -3145,7 +3154,7 @@
       },
       "type": "station",
       "name": "Greifswalder Straße",
-      "id": 9110003
+      "id": 9110020
     },
     {
       "coords": {
@@ -3170,7 +3179,7 @@
       },
       "type": "station",
       "name": "Storkower Straße",
-      "id": 9110012
+      "id": 9160014
     },
     {
       "coords": {
@@ -3224,7 +3233,7 @@
       },
       "type": "station",
       "name": "Schöneweide",
-      "id": 9192001
+      "id": 9194006
     },
     {
       "coords": {
@@ -3251,7 +3260,7 @@
       },
       "type": "station",
       "name": "Altglienicke",
-      "id": 9195510
+      "id": 9195006
     },
     {
       "coords": {
@@ -3280,7 +3289,7 @@
       },
       "type": "station",
       "name": "Uhlandstraße",
-      "id": 9023301
+      "id": 9023105
     },
     {
       "coords": {
@@ -3316,7 +3325,7 @@
       },
       "type": "station",
       "name": "Kurfürstenstraße",
-      "id": 9005201
+      "id": 9068351
     },
     {
       "coords": {
@@ -3388,7 +3397,7 @@
       },
       "type": "station",
       "name": "Warschauer Straße",
-      "id": 9120004
+      "id": 9120014
     }
   ],
   "u2": [
@@ -3453,7 +3462,7 @@
       },
       "type": "station",
       "name": "Bismarckstraße",
-      "id": 9024201
+      "id": 9063104
     },
     {
       "coords": {
@@ -3632,7 +3641,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -3722,7 +3731,7 @@
       },
       "type": "station",
       "name": "Oskar-Helene-Heim",
-      "id": 9051301
+      "id": 9051371
     },
     {
       "coords": {
@@ -3780,21 +3789,21 @@
     },
     {
       "coords": {
-        "x": 28,
-        "y": 51
-      },
-      "type": "station",
-      "name": "Hohenzollernplatz",
-      "id": 9043101
-    },
-    {
-      "coords": {
         "x": 30,
         "y": 50
       },
       "type": "station",
       "name": "Fehrbelliner Platz",
       "id": 9041101
+    },
+    {
+      "coords": {
+        "x": 32,
+        "y": 48
+      },
+      "type": "station",
+      "name": "Hohenzollernplatz",
+      "id": 9043101
     },
     {
       "coords": {
@@ -3812,7 +3821,7 @@
       },
       "type": "station",
       "name": "Augsburger Straße",
-      "id": 9023202
+      "id": 9074264
     },
     {
       "coords": {
@@ -3857,7 +3866,7 @@
       },
       "type": "station",
       "name": "Rathaus Schöneberg",
-      "id": 9054101
+      "id": 9054106
     },
     {
       "coords": {
@@ -3902,7 +3911,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -3965,7 +3974,7 @@
       },
       "type": "station",
       "name": "Magdalenenstraße",
-      "id": 9160005
+      "id": 9160530
     },
     {
       "coords": {
@@ -3974,7 +3983,7 @@
       },
       "type": "station",
       "name": "Lichtenberg",
-      "id": 9160004
+      "id": 9160522
     },
     {
       "coords": {
@@ -4064,7 +4073,7 @@
       },
       "type": "station",
       "name": "Louis-Lewin-Straße",
-      "id": 9175015
+      "id": 9175014
     },
     {
       "coords": {
@@ -4093,7 +4102,7 @@
       },
       "type": "station",
       "name": "Bundestag",
-      "id": 9003254
+      "id": 9004104
     },
     {
       "coords": {
@@ -4113,7 +4122,7 @@
       },
       "type": "station",
       "name": "Alt-Tegel",
-      "id": 9089301
+      "id": 9089372
     },
     {
       "coords": {
@@ -4131,7 +4140,7 @@
       },
       "type": "station",
       "name": "Holzhauser Straße",
-      "id": 9088201
+      "id": 9097101
     },
     {
       "coords": {
@@ -4139,7 +4148,8 @@
         "y": 13
       },
       "type": "station",
-      "name": "Otisstraße"
+      "name": "Otisstraße",
+      "id": 9088203
     },
     {
       "coords": {
@@ -4148,7 +4158,7 @@
       },
       "type": "station",
       "name": "Scharnweberstraße",
-      "id": 9087101
+      "id": 9120540
     },
     {
       "coords": {
@@ -4183,7 +4193,8 @@
         "y": 19
       },
       "type": "station",
-      "name": "Seestraße"
+      "name": "Seestraße",
+      "id": 9009105
     },
     {
       "coords": {
@@ -4210,7 +4221,7 @@
       },
       "type": "station",
       "name": "Reinickendorfer Straße",
-      "id": 9008102
+      "id": 9008104
     },
     {
       "coords": {
@@ -4237,7 +4248,7 @@
       },
       "type": "station",
       "name": "Oranienburger Tor",
-      "id": 9100019
+      "id": 9100506
     },
     {
       "coords": {
@@ -4246,7 +4257,7 @@
       },
       "type": "station",
       "name": "Friedrichstraße",
-      "id": 9100001
+      "id": 9024108
     },
     {
       "coords": {
@@ -4279,7 +4290,8 @@
         "y": 41
       },
       "type": "station",
-      "name": "Kochstraße"
+      "name": "Kochstraße",
+      "id": 9012153
     },
     {
       "coords": {
@@ -4351,7 +4363,7 @@
       },
       "type": "station",
       "name": "Ullsteinstraße",
-      "id": 9069271
+      "id": 9069258
     },
     {
       "coords": {
@@ -4369,7 +4381,7 @@
       },
       "type": "station",
       "name": "Alt-Mariendorf",
-      "id": 9070301
+      "id": 9070701
     }
   ],
   "u7": [
@@ -4416,7 +4428,7 @@
       },
       "type": "station",
       "name": "Paulsternstraße",
-      "id": 9034101
+      "id": 9034103
     },
     {
       "coords": {
@@ -4495,7 +4507,7 @@
       },
       "type": "station",
       "name": "Bismarckstraße",
-      "id": 9024201
+      "id": 9063104
     },
     {
       "coords": {
@@ -4504,7 +4516,7 @@
       },
       "type": "station",
       "name": "Wilmersdorfer Straße",
-      "id": 9024202
+      "id": 9024200
     },
     {
       "coords": {
@@ -4567,7 +4579,7 @@
       },
       "type": "station",
       "name": "Eisenacher Straße",
-      "id": 9054103
+      "id": 9175536
     },
     {
       "coords": {
@@ -4592,7 +4604,7 @@
       },
       "type": "station",
       "name": "Yorckstraße",
-      "id": 9600003
+      "id": 9017105
     },
     {
       "coords": {
@@ -4769,7 +4781,7 @@
       },
       "type": "station",
       "name": "Wutzkyallee",
-      "id": 9083102
+      "id": 9082257
     },
     {
       "coords": {
@@ -4798,7 +4810,7 @@
       },
       "type": "station",
       "name": "Wittenau",
-      "id": 9096101
+      "id": 9096407
     },
     {
       "coords": {
@@ -4807,7 +4819,7 @@
       },
       "type": "station",
       "name": "Rathaus Reinickendorf",
-      "id": 9096410
+      "id": 9096710
     },
     {
       "coords": {
@@ -4843,7 +4855,7 @@
       },
       "type": "station",
       "name": "Residenzstraße",
-      "id": 9085203
+      "id": 9006103
     },
     {
       "coords": {
@@ -4869,7 +4881,8 @@
         "y": 20
       },
       "type": "station",
-      "name": "Pankstraße"
+      "name": "Pankstraße",
+      "id": 9009203
     },
     {
       "coords": {
@@ -4914,7 +4927,7 @@
       },
       "type": "station",
       "name": "Weinmeisterstraße",
-      "id": 9100051
+      "id": 9100080
     },
     {
       "coords": {
@@ -4923,7 +4936,7 @@
       },
       "type": "station",
       "name": "Alexanderplatz",
-      "id": 9100003
+      "id": 9100005
     },
     {
       "coords": {
@@ -5001,7 +5014,8 @@
         "y": 51
       },
       "type": "station",
-      "name": "Leinestraße"
+      "name": "Leinestraße",
+      "id": 9079201
     },
     {
       "coords": {
@@ -5010,7 +5024,7 @@
       },
       "type": "station",
       "name": "Hermannstraße",
-      "id": 9079221
+      "id": 9131527
     }
   ],
   "u9": [
@@ -5055,7 +5069,7 @@
       },
       "type": "station",
       "name": "Amrumer Straße",
-      "id": 9009101
+      "id": 9009105
     },
     {
       "coords": {
@@ -5080,7 +5094,7 @@
       },
       "type": "station",
       "name": "Birkenstraße",
-      "id": 9002201
+      "id": 9002254
     },
     {
       "coords": {
@@ -5088,7 +5102,8 @@
         "y": 30
       },
       "type": "station",
-      "name": "Turmstraße"
+      "name": "Turmstraße",
+      "id": 9003174
     },
     {
       "coords": {
@@ -5140,7 +5155,7 @@
       },
       "type": "station",
       "name": "Güntzelstraße",
-      "id": 9043201
+      "id": 9043103
     },
     {
       "coords": {
@@ -5194,7 +5209,7 @@
       },
       "type": "station",
       "name": "Rathaus Steglitz",
-      "id": 9062202
+      "id": 9062782
     }
   ]
 }
