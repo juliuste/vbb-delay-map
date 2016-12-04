@@ -92,7 +92,7 @@ function composeMap(lines, netSBahn, netUBahn) {
 			} else if ((typeof netUBahn[y] !== 'undefined') && (typeof netUBahn[y][x] !== 'undefined') && (netUBahn[y][x] !== ' ')) {
 				img = getTransportationTile(netUBahn[y][x], 'u');
 			}
-			html += '<img id="tile' + x + '_' + y + '" class="tile" style="left:' + (x * 130) + 'px;" src="' + img + '">';
+			html += '<img id="tile' + x + '_' + y + '" class="tile" style="left:' + (x * 65) + 'px;" src="' + img + '">';
 		}
 
 		var stationsS = [];
@@ -116,11 +116,11 @@ function composeMap(lines, netSBahn, netUBahn) {
 		}
 		for (x = 0; x < maxX; ++x) {
 			if ((stationsU[x] > 0) && (stationsS[x] > 0)) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSubahn.png">';
+				html += '<img class="tile" style="left:' + (x * 65) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSubahn.png">';
 			} else if (stationsU[x] > 0) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsUbahn.png">';
+				html += '<img class="tile" style="left:' + (x * 65) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsUbahn.png">';
 			} else if (stationsS[x] > 0) {
-				html += '<img class="tile" style="left:' + (x * 130) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSbahn.png">';
+				html += '<img class="tile" style="left:' + (x * 65) + 'px;" src="' + 'https://cdn.rawgit.com/tursics/isometric-icons/master/transportDetails/transportDetailsSbahn.png">';
 			}
 		}
 		html += '</p>';

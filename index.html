@@ -68,14 +68,15 @@ form{
 #map p {
 	white-space: nowrap;
 	position: relative;
-	height: 33px;
+	height: 16.5px;
 	margin: 0;
 	padding: 0;
 }
 #map p:nth-child(even) {
-	margin-left: 65px;
+	margin-left: 32.5px;
 }
 #map p img.tile {
+	width: 65px;
 	position: absolute;
 	bottom: 0;
 }
@@ -84,7 +85,7 @@ form{
 <body>
 	<div id="map"></div>
 	<form id="routing" action="#">
-		<p id="error"></p>	
+		<p id="error"></p>
 		<input type="text" class="station" id="from-station" placeholder="Startbahnhof">
 		<input type="text" class="station" id="to-station" placeholder="Zielbahnhof">
 		<input type="submit" id="submit" value="Los!">
