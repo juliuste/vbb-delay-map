@@ -1,5 +1,5 @@
 {
-  "name": "vbb-toy-map",
+  "name": "vbb-delay-map",
   "description": "",
   "version": "0.1.0",
   "keywords": [],
@@ -8,9 +8,9 @@
     "Jannis R <mail@jannisr.de>",
     "Julius Tens <mail@julius-tens.de>"
   ],
-  "homepage": "https://github.com/juliuste/vbb-toy-map",
-  "repository": "juliuste/vbb-toy-map",
-  "bugs": "https://github.com/juliuste/vbb-toy-map/issues",
+  "homepage": "https://github.com/juliuste/vbb-delay-map",
+  "repository": "juliuste/vbb-delay-map",
+  "bugs": "https://github.com/juliuste/vbb-delay-map/issues",
   "main": "./index.js",
   "files": [
     "index.js"
